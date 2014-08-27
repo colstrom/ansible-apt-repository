@@ -14,7 +14,7 @@
 - name: "{{ Import Repository | {{ repository_url }}"
   apt_repository:
     state: present
-    repo: "deb {{ repository_url | mandatory }}"
+    repo: "{{ repository_url | mandatory }}"
   notify: Update Package Cache
 
 - name: Trigger All Callbacks
