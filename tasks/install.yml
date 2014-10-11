@@ -11,7 +11,7 @@
     - assumes-trust
     - improves-security
 
-- name: "{{ Import Repository | {{ repository_url }}"
+- name: "Import Repository | {{ repository_url }}"
   apt_repository:
     state: present
     repo: "{{ repository_url | mandatory }}"
