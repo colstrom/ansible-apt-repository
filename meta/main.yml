@@ -1,0 +1,14 @@
+---
+galaxy_info:
+  author: Chris Olstrom
+  description: Adds an apt repository
+  license: MIT
+  platforms:
+  - name: Ubuntu
+    versions:
+    - trusty
+  categories:
+  - system
+  - repository
+  - packaging
+dependencies: []
