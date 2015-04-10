@@ -4,11 +4,11 @@ galaxy_info:
   description: Adds an apt repository
   license: MIT
   platforms:
-  - name: Ubuntu
-    versions:
-    - trusty
+    - name: Ubuntu
+      versions:
+        - trusty
   categories:
-  - system
-  - repository
-  - packaging
+    - system
+    - repository
+    - packaging
 dependencies: []
