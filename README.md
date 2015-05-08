@@ -21,7 +21,7 @@ Example Usage
 -------------
     ---
     dependencies:
-      - role: colstrom.apt-repository
+      - role: telusdigital.apt-repository
         repository_key: "0x0000000000000000"
         repository_url: "deb http://ppa.launchpad.net/SOME_REPOSITORY {{ ansible_distribution_release }} main"
 
