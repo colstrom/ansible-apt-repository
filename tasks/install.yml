@@ -1,7 +1,5 @@
 ---
 - name: "Import Signing Key via HKP | {{ repository_key }}"
-  sudo: true
-  sudo_user: root
   apt_key:
     state: present
     keyserver: 'hkp://keyserver.ubuntu.com:80'
