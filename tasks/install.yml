@@ -4,6 +4,7 @@
     state: present
     keyserver: 'hkp://keyserver.ubuntu.com:80'
     id: "{{ repository_key }}"
+  when: repository_key is defined
   tags:
     - repository
     - signing-key
