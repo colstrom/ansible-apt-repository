@@ -12,6 +12,18 @@
     - assumes-trust
     - improves-security
 
+- name: "Import Signing Key via HKP | {{ repository_key }}"
+  apt_key:
+    state: present
+    data: "{{ repository_key_file_contents }}"
+  when: repository_key_file_contents is defined
+  tags:
+    - repository
+    - signing-key
+    - using-apt
+    - assumes-trust
+    - improves-security
+
 - name: "Import Repository | {{ repository_url }}"
   apt_repository:
     state: present
