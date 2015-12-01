@@ -12,7 +12,7 @@
     - assumes-trust
     - improves-security
 
-- name: "Import Signing Key via HKP | {{ repository_key }}"
+- name: "Import Signing Key via raw data | {{ repository_key }}"
   apt_key:
     state: present
     data: "{{ repository_key_file_contents }}"
