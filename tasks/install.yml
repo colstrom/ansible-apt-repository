@@ -12,11 +12,11 @@
     - assumes-trust
     - improves-security
 
-- name: "Import Signing Key via raw data | {{ repository_key }}"
+- name: "Import Signing Key via public_key | {{ repository_key }}"
   apt_key:
     state: present
-    data: "{{ repository_key_file_contents }}"
-  when: repository_key_file_contents is defined
+    data: "{{ repository_key_public_key }}"
+  when: repository_key_public_key is defined
   tags:
     - repository
     - signing-key
