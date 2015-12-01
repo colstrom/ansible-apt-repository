@@ -4,19 +4,6 @@
     state: present
     keyserver: 'hkp://keyserver.ubuntu.com:80'
     id: "{{ repository_key }}"
-  when: repository_key is defined
-  tags:
-    - repository
-    - signing-key
-    - using-apt
-    - assumes-trust
-    - improves-security
-
-- name: "Import Signing Key via raw data | {{ repository_key }}"
-  apt_key:
-    state: present
-    data: "{{ repository_key_file_contents }}"
-  when: repository_key_file_contents is defined
   tags:
     - repository
     - signing-key
