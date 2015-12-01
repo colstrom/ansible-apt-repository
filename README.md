@@ -12,6 +12,7 @@ Tunables
 --------
 * repository_url (string): URL to add to sources.list
 * repository_key (string): ID for repository signing key. This will be imported into the apt keychain.
+* repository_key_public_key (string): The public key of the repo being added.
 
 Dependencies
 ------------
