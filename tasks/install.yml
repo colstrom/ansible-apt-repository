@@ -9,7 +9,7 @@
     state: present
     keyserver: 'hkp://keyserver.ubuntu.com:80'
     id: "{{ repository_key }}"
-  when: repository_key is defined
+  when: repository_key is not None
   tags:
     - repository
     - signing-key
@@ -21,7 +21,7 @@
   apt_key:
     state: present
     data: "{{ repository_key_public_key }}"
-  when: repository_key_public_key is defined
+  when: repository_key_public_key is not None
   tags:
     - repository
     - signing-key
