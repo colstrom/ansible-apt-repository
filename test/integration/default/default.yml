@@ -6,3 +6,4 @@
   roles:
     # name of role to test
     - role: ansible-apt-repository
+      repository_url: deb https://deb.nodesource.com/node_0.5x
