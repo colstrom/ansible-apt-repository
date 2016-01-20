@@ -1,4 +1,9 @@
 ---
+- name: Install apt HTTPS Transport | apt
+  apt:
+    state: latest
+    pkg: apt-transport-https
+
 - name: "Import Signing Key via HKP | {{ repository_key }}"
   apt_key:
     state: present
