@@ -35,3 +35,6 @@
     state: present
     repo: "{{ repository_url | mandatory }}"
     update_cache: yes
+
+- apt:
+    update_cache: yes
